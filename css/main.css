@@ -433,7 +433,7 @@ body:before {
 
 .footer-bottom .site-logo img,
 .footer-bottom .svg-logo {
-  max-width: 100%;
+  width: 80%;
 }
 
 @media (min-width: 64em) {
@@ -975,5 +975,16 @@ input[type="password"] {
 @media (max-width: 64em) {
   .copyright__text {
     display: block;
+    margin: 1.5em 0em;
+  }
+  .copyright img {
+    display: inline-block;
+    margin-top: -5px;
+    margin-right: 15px;
+    vertical-align: middle;
+    visibility: visible;
+  }
+  .ae-logo {
+    visibility: hidden;
   }
 }
