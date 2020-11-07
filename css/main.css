@@ -826,6 +826,9 @@ input[type="password"] {
 /*----- SLIDESHOW -----*/
 .slideshow {
   margin: 0 -15px;
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: row; */
 }
 .slideshow__slide {
   overflow: hidden;
@@ -884,6 +887,7 @@ input[type="password"] {
 @media (min-width: 64em) {
   .slideshow {
     margin: 0;
+    overflow: hidden;
   }
 }
 
