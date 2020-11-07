@@ -1002,6 +1002,12 @@ input[type="password"] {
   min-width: 0;
 }
 
+/* ------Socials------ */
+@media (max-width: 64em) {
+  .social-list li svg {
+    font-size: 24px;
+  }
+}
 /*----- COPYRIGHT -----*/
 
 .copyright a {
