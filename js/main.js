@@ -47,3 +47,11 @@ nextBtn.addEventListener("click", ()=>{
   let move = size*counter;
   slide.style.transform = `translateX(-${move}px)`;
 })
+
+prevBtn.addEventListener("click", ()=>{
+  slide.style.transition = "transform 0.4s ease-in-out";
+  counter--;
+  console.log("Counter", counter);
+  let move = size*counter;
+  slide.style.transform = `translateX(-${move}px)`;
+})
