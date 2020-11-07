@@ -738,7 +738,10 @@ input[type="password"] {
   display: inline-block;
   position: relative;
   width: 32px;
-  height: 28px;
+  height: 36px;
+}
+.menu-toggle svg {
+  font-size: 36px;
 }
 
 @media (min-width: 64em) {
@@ -828,15 +831,17 @@ input[type="password"] {
   /* display: none; */
   /* margin: 0 -15px; */
   margin: 0px;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   border: black dashed thin;
+  position: relative;
 }
 
 .slideshow-container {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .slideshow__slide {
@@ -892,6 +897,27 @@ input[type="password"] {
   font-family: "Alex Brush", cursive;
   font-size: 24px;
   font-size: 1.5rem;
+}
+
+#prevBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 2%;
+  font-size: 30px;
+  fill: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 2%;
+  font-size: 30px;
+  fill: black;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* mobile */
