@@ -825,11 +825,18 @@ input[type="password"] {
 
 /*----- SLIDESHOW -----*/
 .slideshow {
-  margin: 0 -15px;
+  /* display: none; */
+  /* margin: 0 -15px; */
+  margin: 0px;
   overflow: hidden;
   /* display: flex;
   flex-direction: row; */
 }
+
+.slideshow button {
+  display: none;
+}
+
 .slideshow__slide {
   overflow: hidden;
   position: relative;
@@ -884,10 +891,10 @@ input[type="password"] {
   font-size: 1.5rem;
 }
 
-@media (min-width: 64em) {
+@media (max-width: 64em) {
   .slideshow {
+    display: none;
     margin: 0;
-    overflow: hidden;
   }
 }
 
