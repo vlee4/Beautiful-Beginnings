@@ -828,17 +828,20 @@ input[type="password"] {
   /* display: none; */
   /* margin: 0 -15px; */
   margin: 0px;
-  overflow: hidden;
-  /* display: flex;
-  flex-direction: row; */
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: row;
+  border: black dashed thin;
 }
 
-.slideshow button {
-  display: none;
+.slideshow-container {
+  display: flex;
+  width: 100%;
 }
 
 .slideshow__slide {
-  overflow: hidden;
+  /* display: flex;
+  width: 100%; */
   position: relative;
 }
 .slide__bg {
@@ -891,10 +894,14 @@ input[type="password"] {
   font-size: 1.5rem;
 }
 
+/* mobile */
 @media (max-width: 64em) {
   .slideshow {
     display: none;
     margin: 0;
+  }
+  .slideshow button {
+    display: none;
   }
 }
 
