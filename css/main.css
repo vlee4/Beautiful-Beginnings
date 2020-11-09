@@ -836,8 +836,6 @@ input[type="password"] {
 
 /*----- SLIDESHOW -----*/
 .slideshow {
-  /* display: none; */
-  /* margin: 0 -15px; */
   margin: 0px;
   overflow: hidden;
   display: flex;
@@ -853,8 +851,6 @@ input[type="password"] {
 }
 
 .slideshow__slide {
-  /* display: flex;
-  width: 100%; */
   position: relative;
 }
 .slide__bg {
