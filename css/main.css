@@ -168,6 +168,9 @@ body:before {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  justify-content: space-evenly;
+  padding: 0px;
+  font-size: medium;
 }
 
 .header-bottom {
@@ -264,7 +267,17 @@ body:before {
   }
 
   .header-bottom {
-    position: absolute;
+    /* position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 15px 10px 0;
+    border: 2px solid #ccc;
+    border-top-width: 3px;
+    border-radius: 3px;
+    background: #fff; */
+
+    position: relative;
     top: 100%;
     left: 0;
     right: 0;
@@ -273,6 +286,11 @@ body:before {
     border-top-width: 3px;
     border-radius: 3px;
     background: #fff;
+
+    width: 100vw;
+    display: none; /*||flex*/
+    flex-direction: column;
+    margin-left: -15px;
   }
 }
 
@@ -709,6 +727,7 @@ input[type="password"] {
   display: -ms-flexbox;
   display: flex;
   font-style: italic;
+  color: grey;
 }
 .login-links strong {
   margin-left: 0.3em;
