@@ -1,6 +1,5 @@
 //Slideshow functionality
 const slideshow = document.querySelector(".slideshow");
-console.log("window", window)
 
 function slideshowInit(){
   let timerId;
@@ -20,7 +19,6 @@ function slideshowInit(){
   function nextSlide(){
     if(getComputedStyle(slideshow).display!=="none"){
       if(counter>=slideImg.length-1) return;
-      console.log("NEXT SLIDE")
       slide.style.transition = "transform 0.4s ease-in-out";
       counter++;
       slide.style.transform = `translateX(-${size*counter}px)`;
@@ -61,19 +59,16 @@ function slideshowInit(){
       if(state !== 1) return;
       window.clearInterval(timerId);
       state = 2;
-      console.log("pause", state)
     }
 
     this.resume = function(){
       if(state!==2) return;
       timerId = window.setInterval(callback, delay)
-      console.log("resume", state)
       state = 1;
     }
 
     timerId = window.setInterval(callback, delay)
     state = 1;
-    console.log(state, "State")
   }
 
   const timer = new IntervalTimer(nextSlide, 3000);
