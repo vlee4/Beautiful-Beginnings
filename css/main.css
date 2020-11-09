@@ -1013,11 +1013,52 @@ input[type="password"] {
 }
 
 /* ------Socials------ */
+/* @media (max-width: 64em) { */
+.social-list {
+  display: flex;
+}
+
+.social-list svg,
+.social-list img {
+  width: 30px;
+  height: 30px;
+  margin: 0.5em;
+}
+
 @media (max-width: 64em) {
-  .social-list li svg {
-    font-size: 24px;
+  .site-social {
+    width: 95vw;
+  }
+
+  .social-list {
+    justify-content: space-between;
+    width: 95%;
+  }
+  .social-list img {
+    margin: 0px;
   }
 }
+
+/* #social-fb {
+  fill: #3c5a98;
+}
+#social-twt {
+  fill: white;
+  background-color: #2ca9e1;
+}
+#social-pin {
+  background-color: #d4352f;
+  fill: white;
+}
+#social-yt {
+  fill: #ef3636;
+  background-color: white;
+}
+#social-g-p {
+  fill: white;
+  background: #dd4b39;
+} */
+/* } */
 /*----- COPYRIGHT -----*/
 
 .copyright a {
