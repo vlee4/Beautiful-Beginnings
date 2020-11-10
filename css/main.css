@@ -497,6 +497,17 @@ body:before {
   }
 }
 
+/*-------------Footer Accordion---------*/
+
+.expander__toggle {
+  box-shadow: 0px 1px 1px 0px #73717136;
+  width: 90vw;
+}
+
+.expander__panel {
+  display: none;
+}
+
 /*--------------- GLOBALS ---------------*/
 
 a {

@@ -99,4 +99,12 @@ function toggleHamMenu(){
 }
 hamburgerIcon.addEventListener("click", toggleHamMenu)
 
+///////////////////////Footer Accordion////////////////////////////////
+const expander = document.querySelectorAll(".expander")
+const footerState = {
+  about: 0,
+  service: 0,
+  shop: 0
+}
 
+// expander.forEach()
