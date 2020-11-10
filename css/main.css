@@ -157,6 +157,7 @@ body:before {
   margin: 0 auto;
   width: 320px;
   height: 54px;
+  max-width: 100%;
 }
 
 .header-middle .member-widget__cart {
