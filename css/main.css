@@ -267,7 +267,7 @@ body:before {
   }
 
   .header-bottom {
-    /* position: absolute;
+    position: absolute;
     top: 100%;
     left: 0;
     right: 0;
@@ -275,9 +275,11 @@ body:before {
     border: 2px solid #ccc;
     border-top-width: 3px;
     border-radius: 3px;
-    background: #fff; */
+    background: #fff;
 
-    position: relative;
+    display: none;
+
+    /* position: relative;
     top: 100%;
     left: 0;
     right: 0;
@@ -288,9 +290,9 @@ body:before {
     background: #fff;
 
     width: 100vw;
-    display: none; /*||flex*/
+    display: none;
     flex-direction: column;
-    margin-left: -15px;
+    margin-left: -15px; */
   }
 }
 
