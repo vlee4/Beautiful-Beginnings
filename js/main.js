@@ -1,4 +1,4 @@
-//Slideshow functionality
+////////////Slideshow functionality//////////////////////
 const slideshow = document.querySelector(".slideshow");
 
 function slideshowInit(){
@@ -81,14 +81,13 @@ function slideshowInit(){
 window.addEventListener("load", slideshowInit);
 
 
-//Hamburger menu functionality
+////////////////////Hamburger menu functionality//////////////////////
 const hamburgerIcon = document.querySelector(".menu-toggle");
-// let navMenu;
 let menuState = 0; //default closed = 0
+
 function toggleHamMenu(){
   let navMenu = document.querySelector(".header-bottom")
   if(menuState===0 &&(getComputedStyle(navMenu).display==="none")){// if menu is closed -> open
-    //console.log("opening menu", getComputedStyle(navMenu).display);
     menuState = 1;
     navMenu.style.display = "block";
   }
