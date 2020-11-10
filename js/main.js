@@ -1,3 +1,4 @@
+
 ////////////Slideshow functionality//////////////////////
 const slideshow = document.querySelector(".slideshow");
 
@@ -6,19 +7,19 @@ function slideshowInit(){
 
   var counter = 1;
   const slide = document.querySelector(".slideshow-container");
-  const slideImg = document.querySelectorAll(`.slideshow-container img`);
+  const slideImgs = document.querySelectorAll(`.slideshow-container img`);
 
   //Btns
   const prevBtn = document.querySelector("#prevBtn");
   const nextBtn = document.querySelector("#nextBtn");
 
-  const size = slideImg[0].clientWidth||940;
+  const size = slideImgs[0].clientWidth||940;
 
   slide.style.transform = `translateX(-940px)`;
 
   function nextSlide(){
     if(getComputedStyle(slideshow).display!=="none"){
-      if(counter>=slideImg.length-1) return;
+      if(counter>=slideImgs.length-1) return;
       slide.style.transition = "transform 0.4s ease-in-out";
       counter++;
       slide.style.transform = `translateX(-${size*counter}px)`;
@@ -37,15 +38,15 @@ function slideshowInit(){
 
   //Also prevents slideshow from iterating passed possible slides
   slide.addEventListener("transitionend", ()=> {
-    if(slideImg[counter].id==="lastClone"){
+    if(slideImgs[counter].id==="lastClone"){
       slide.style.transition = "none";
-      counter = slideImg.length-2;
+      counter = slideImgs.length-2;
       slide.style.transform = `translateX(-${size*counter}px)`;
     }
 
-    if(slideImg[counter].id==="firstClone"){
+    if(slideImgs[counter].id==="firstClone"){
       slide.style.transition = "none";
-      counter = slideImg.length-counter;
+      counter = slideImgs.length-counter;
       slide.style.transform = `translateX(-${size*counter}px)`;
     }
   })
@@ -100,11 +101,32 @@ function toggleHamMenu(){
 hamburgerIcon.addEventListener("click", toggleHamMenu)
 
 ///////////////////////Footer Accordion////////////////////////////////
-const expander = document.querySelectorAll(".expander")
-const footerState = {
-  about: 0,
-  service: 0,
-  shop: 0
+function footerAccordion() {
+  const columns = document.querySelectorAll(".expander");
+  console.log("expanders", columns)
+  console.log("length", columns.length)
+
+  // const footerState = {
+  //   about: 0,
+  //   service: 0,
+  //   shop: 0
+  // }
+
+
+  for(let i = 0; i<columns.length; i++){
+    console.log(columns[i], "currentExpander")
+    columns[i].addEventListener("click", ()=>{
+      let panel = columns[i].querySelector(".expander__panel");
+      console.log("PANEL", panel)
+      if(panel.style.display==="none"){ // if panel is closed
+        panel.classList.toggle("active");
+        panel.style.display = "block"
+      } else { //if panel is open
+        panel.style.display ="none"
+      }
+      // let panel = document.querySelector("this:nth-child(2)")
+    })
+  }
 }
 
-// expander.forEach()
+window.addEventListener("load", footerAccordion)
