@@ -430,7 +430,7 @@ body:before {
 .footer-top .page-footer__column {
   max-width: 224px;
 }
-.page-footer__column h2,
+/* .page-footer__column h2, */
 .page-footer__column .wysiwyg h2 {
   margin-top: 25px;
   margin-bottom: 0.3em;
@@ -500,10 +500,40 @@ body:before {
 }
 
 /*-------------Footer Accordion---------*/
+.plus {
+  display: none;
+}
+
 @media (max-width: 63.9em) {
+  .expander__tab {
+    display: flex;
+    align-items: center;
+  }
+  .plus {
+    display: inline;
+    position: absolute;
+    right: 10px;
+  }
+  /* .plus object {
+    fill: blue;
+    width: 36px;
+    height: 36px;
+  } */
+  .plus svg {
+    width: 36px;
+    height: 36px;
+    color: pink;
+  }
+
+  .plus img {
+    background-color: blue;
+  }
   .expander__toggle {
     box-shadow: 0px 1px 1px 0px #73717136;
     width: 90vw;
+    margin-top: 0px;
+    margin: 10px 0px;
+    padding: 10px 0px;
   }
 
   .expander__panel {

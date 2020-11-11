@@ -1,5 +1,5 @@
 
-////////////Slideshow functionality//////////////////////
+////////////Slideshow functionality//////////
 const slideshow = document.querySelector(".slideshow");
 
 function slideshowInit(){
@@ -82,7 +82,7 @@ function slideshowInit(){
 window.addEventListener("load", slideshowInit);
 
 
-////////////////////Hamburger menu functionality//////////////////////
+////////Hamburger menu functionality/////////
 const hamburgerIcon = document.querySelector(".menu-toggle");
 let menuState = 0; //default closed = 0
 
@@ -99,32 +99,19 @@ function toggleHamMenu(){
   }
 }
 hamburgerIcon.addEventListener("click", toggleHamMenu)
-
-///////////////////////Footer Accordion////////////////////////////////
+//////////Footer Accordion///////////
 function footerAccordion() {
   const columns = document.querySelectorAll(".expander");
-  console.log("expanders", columns)
-  console.log("length", columns.length)
-
-  // const footerState = {
-  //   about: 0,
-  //   service: 0,
-  //   shop: 0
-  // }
-
 
   for(let i = 0; i<columns.length; i++){
-    console.log(columns[i], "currentExpander")
     columns[i].addEventListener("click", ()=>{
       let panel = columns[i].querySelector(".expander__panel");
-      console.log("PANEL", panel)
       if(panel.style.display==="none"){ // if panel is closed
         panel.classList.toggle("active");
         panel.style.display = "block"
       } else { //if panel is open
-        panel.style.display ="none"
+          panel.style.display ="none"
       }
-      // let panel = document.querySelector("this:nth-child(2)")
     })
   }
 }
