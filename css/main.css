@@ -501,12 +501,8 @@ body:before {
   .plus svg {
     width: 36px;
     height: 36px;
-    color: pink;
   }
 
-  .plus img {
-    background-color: blue;
-  }
   .expander__toggle {
     box-shadow: 0px 1px 1px 0px #73717136;
     width: 90vw;
@@ -797,8 +793,7 @@ input[type="password"] {
   width: 32px;
   height: 36px;
 }
-.menu-toggle svg {
-  font-size: 36px;
+.menu-toggle .svg-icon {
   width: 36px;
   height: 36px;
 }

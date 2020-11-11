@@ -35,16 +35,22 @@
                     <div class="header-toggles--mobile">
                         <a href="#">
                             <!-- need a cart icon -->
-                            <svg class="svg-icon">
+                            <!-- <svg class="svg-icon">
                                 <use xlink:href="./images/svg-legend.svg#icon-shopping-cart"/>
-                            </svg>
+                            </svg> -->
+                            <img src="./images/shopping-cart.svg" onerror="onerror=null; this.src='./images/shopping-cart.png';" alt="shopping cart">
+
+                            <!-- <object class="svg-icon" data="images/shopping-cart.svg" type="image/svg+xml">
+                                <img src="images/shopping-cart.png" alt="Shopping car icon">
+                            </object> -->
                             <span class="visually-hidden">Go to Cart</span>
                         </a>
                         <a href="#" class="menu-toggle">
-                            <svg >
-                                <use xlink:href="./images/svg-legend.svg#icon-menu"/>
-                            </svg>
-                            <!-- <img src="./images/menu-black-36dp.svg" alt="hamburger menu"> -->
+
+                            <!-- <object class="svg-icon" data="images/menu-black-36dp.svg" type="image/svg+xml">
+                                <img src="./images/outline_menu_black_36dp.png" alt="hamburger menu icon">
+                            </object> -->
+                            <img src="images/menu-black-36dp.svg" onerror="onerror=null; this.src='./images/outline_menu_black_36dp.png';" alt="hamburger menu">
                             <span class="visually-hidden">Toggle Menu</span>
                         </a>
                     </div>
@@ -66,8 +72,12 @@
                             <label for="headerSiteSeach" class="visually-hidden">Search this site...</label>
                             <input id="headerSiteSearch" type="search" placeholder="Search this site.."/>
                             <button class="site-search__button">
-                                <!-- need a search icon -->
-                                <img src="./images/search-black-18dp.svg" alt="search icon">
+                                <!-- <object  data="images//search-black-18dp.svg" type="image/svg+xml">
+                                    <img src="images/outline_search_black_18dp.png" alt="Search icon">
+                                </object> -->
+                                <img src="./images/search-black-18dp.svg" onerror="onerror=null; this.src='images/outline_search_black_18dp.png';" alt="search icon">
+
+                                <!-- <img src="./images/search-black-18dp.svg" alt="search icon"> -->
                                 <span class="visually-hidden">Submit Search</span>
                             </button>
                         </form>
@@ -123,12 +133,17 @@
             </header>
             <main class="page-main">
                 <div class="slideshow">
-                    <svg class="svg-icon" id="prevBtn">
-                        <use xlink:href="./images/svg-legend.svg#icon-prev-btn"></use>
-                    </svg>
-                    <svg class="svg-icon" id="nextBtn">
-                        <use xlink:href="./images/svg-legend.svg#icon-next-btn"></use>
-                    </svg>
+                    <!-- <object id="prevBtn" class="svg-icon" data="images/navigate_before-black-24dp.svg" type="image/svg+xml">
+                        <img src="images/baseline_navigate_before_black_36dp.png" alt="Previous slide button">
+                    </object> -->
+                    <img id="prevBtn" src="images/navigate_before-black-24dp.svg" onerror="onerror=null; this.src='images/baseline_navigate_before_black_36dp.png';" alt="search icon">
+
+                    <img id="nextBtn" src="images/navigate_next-black-24dp.svg" onerror="onerror=null; this.src='images/baseline_navigate_next_black_36dp.png';" alt="search icon">
+
+                    <!-- <object id="nextBtn" class="svg-icon" data="images/navigate_next-black-24dp.svg" type="image/svg+xml">
+                        <img src="images/baseline_navigate_next_black_36dp.png" alt="Next slide button"> -->
+                    </object>
+
                     <div class="slideshow-container">
                         <section class="slideshow__slide slide">
                             <figure class="slide__bg">
@@ -195,7 +210,7 @@
                                 </a>
                             </div>
                         </section>
-                    <!-- need another slide and to setup slideshow functioanlity -->
+
                      </div>
                  </div>
                 <script src="./js/main.js"></script>
@@ -248,12 +263,11 @@
                             <span class="expander__tab">
                                 <h2 class="expander__toggle" id="about">About Us</h2>
                                 <span class="plus">
-                                <!-- <object  data="images/add-black-36dp.svg" type="image/svg+xml">
+                                    <img src="images/add-white-36dp.svg" onerror="onerror=null; this.src='images/baseline_add_black_36dp_1x.png';" alt="search icon">
+
+                                <!-- <object  data="images/add-white-36dp.svg" type="image/svg+xml">
                                     <img src="images/baseline_add_black_36dp_1x.png" alt="Open About Us menu">
                                 </object> -->
-                                    <svg>
-                                        <use xlink:href="./images/svg-legend.svg#icon-plus"></use>
-                                    </svg>
                                 </span>
                             </span>
                             <div class="expander__panel">
@@ -272,9 +286,12 @@
                             <span class="expander__tab">
                                 <h2 class="expander__toggle" id="service">Service</h2>
                                 <span class="plus">
-                                    <svg>
-                                        <use xlink:href="./images/svg-legend.svg#icon-plus"></use>
-                                    </svg>
+                                    <img src="images/add-white-36dp.svg" onerror="onerror=null; this.src='images/baseline_add_black_36dp_1x.png';" alt="search icon">
+
+                                    <!-- <object  data="images/add-white-36dp.svg" type="image/svg+xml">
+                                        <img src="images/baseline_add_black_36dp_1x.png" alt="Open Service menu">
+                                    </object> -->
+
                                 </span>
                             </span>
                             <div class="expander__panel">
@@ -297,9 +314,11 @@
                             <span class="expander__tab">
                                 <h2 class="expander__toggle" id="shop">Shop</h2>
                                 <span class="plus">
-                                    <svg>
-                                        <use xlink:href="./images/svg-legend.svg#icon-plus"></use>
-                                    </svg>
+                                    <img src="images/add-white-36dp.svg" onerror="onerror=null; this.src='images/baseline_add_black_36dp_1x.png';" alt="search icon">
+
+                                    <!-- <object  data="images/add-white-36dp.svg" type="image/svg+xml">
+                                        <img src="images/baseline_add_black_36dp_1x.png" alt="Open Shop menu">
+                                    </object> -->
                                 </span>
                             </span>
                             <div class="expander__panel">
@@ -318,7 +337,6 @@
                         </div>
                     </div>
 
-                <!-- <span class="non-expand"> -->
                     <div class="page-footer__column">
                         <div class="wysiwyg">
                             <h2>Contact Us</h2>
@@ -385,7 +403,7 @@
                             </form>
                         </div>
                     </div>
-                <!-- </span> -->
+
                 </div>
                 <div class="footer-bottom">
 
