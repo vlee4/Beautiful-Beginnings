@@ -820,6 +820,8 @@ input[type="password"] {
 }
 .menu-toggle svg {
   font-size: 36px;
+  width: 36px;
+  height: 36px;
 }
 
 @media (min-width: 64em) {
