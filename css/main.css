@@ -1195,8 +1195,25 @@ input[type="password"] {
     justify-content: center;
   }
 }
-
+/* ------------Tablet Sizing----------- */
 @media (min-width: 769px) and (max-width: 1024px) {
+  .header-middle .svg-logo {
+    height: inherit;
+    width: 65%;
+  }
+
+  .card-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    background: linear-gradient(to bottom, #fff 0%, #fde6e6 100%);
+  }
+
+  .card-list li {
+    margin-bottom: 2em;
+    padding: 0.7em 0.7em 0em 0.7em;
+  }
+
   .copyright__text {
     display: inline-block;
     margin: 0px;
@@ -1209,10 +1226,6 @@ input[type="password"] {
   .ae-logo {
     visibility: visible;
   }
-  .header-middle .svg-logo {
-    height: inherit;
-    width: 65%;
-  }
   .footer-bottom .svg-logo {
     margin-bottom: 1em;
     width: 60%;
@@ -1223,6 +1236,14 @@ input[type="password"] {
   .header-middle .svg-logo {
     height: inherit;
     width: 60%;
+  }
+
+  .card-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #fff 0%, #fde6e6 100%);
+    padding-bottom: 0.5em;
   }
 
   .footer-bottom .svg-logo {
