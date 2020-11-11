@@ -1226,6 +1226,28 @@ input[type="password"] {
   .ae-logo {
     visibility: visible;
   }
+
+  .footer-top {
+    display: flex;
+    padding: 0em 1em;
+  }
+
+  .footer-top .page-footer__column {
+    width: 20%;
+  }
+
+  .expander__tab {
+    display: flex;
+    width: 80%;
+  }
+  .expander__panel {
+    display: inherit;
+  }
+
+  .plus {
+    position: inherit;
+  }
+
   .footer-bottom .svg-logo {
     margin-bottom: 1em;
     width: 60%;
