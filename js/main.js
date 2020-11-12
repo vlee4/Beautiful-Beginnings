@@ -18,6 +18,7 @@ function slideshowInit(){
   slide.style.transform = `translateX(-940px)`;
 
   function nextSlide(){
+    //Checks display of slideshow, if slideshow not displayed, as in mobile view then rest of function won't run
     if(getComputedStyle(slideshow).display!=="none"){
       if(counter>=slideImgs.length-1) return;
       slide.style.transition = "transform 0.4s ease-in-out";
@@ -93,7 +94,6 @@ function toggleHamMenu(){
     navMenu.style.display = "block";
   }
   else {// if menu open -> close
-    console.log("closing menu");
     menuState = 0;
     navMenu.style.display = "none";
   }
@@ -107,7 +107,6 @@ function footerAccordion() {
     columns[i].addEventListener("click", ()=>{
       let panel = columns[i].querySelector(".expander__panel");
       if(panel.style.display==="none"){ // if panel is closed
-        panel.classList.toggle("active");
         panel.style.display = "block"
       } else { //if panel is open
           panel.style.display ="none"
